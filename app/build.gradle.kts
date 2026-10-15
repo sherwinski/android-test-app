@@ -37,4 +37,5 @@ tasks.withType<KotlinCompile>().configureEach {
 }
 
 dependencies {
+    implementation(libs.kotlinx.coroutines.android)
 }
