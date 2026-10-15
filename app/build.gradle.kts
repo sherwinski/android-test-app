@@ -18,6 +18,10 @@ android {
         versionName = "1.0"
     }
 
+    buildFeatures {
+        buildConfig = true
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -37,4 +41,5 @@ tasks.withType<KotlinCompile>().configureEach {
 }
 
 dependencies {
+    implementation(libs.kotlinx.coroutines.android)
 }
